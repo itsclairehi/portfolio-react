@@ -1,22 +1,30 @@
 import React from "react";
-import Project from '../Project';
 
-function Nav(props) {
 
-    function returnName(){
-        console.log("test");
-        
+function Nav({ navSelect, currentNavSelect, setCurrentNavSelect }) {
+
+    function updateState(title) {
+        //update state
+        setCurrentNavSelect(title)
+        console.log("current nav select",currentNavSelect);
     }
-    
+
     return (
-        <nav className="sticky-top navbar-light bg-light nav">
-            <a className="navbar-brand" href="#">Claire Puckett</a>
-            <a className="nav-link" href="#">About Me</a>
-            <a className="nav-link" onClick={returnName} href="#">Portfolio</a>
-            <a className="nav-link" href="#">Contact</a>
-            <a className="nav-link" href="#">Resume</a>
-        </nav>
+        <div className="nav sticky-top navbar-light bg-light">
+
+            <li className="navbar-brand">Claire Puckett</li>
+
+              {navSelect.map((menu, i)=> (
+                  <li
+                 className="nav-link"
+                 onClick={()=>updateState(menu.title)}
+                 key={menu.title}
+                >{menu.title}</li>
+
+            ))}
+
+        </div>
     )
 }
 
-export default Nav
+export default Nav;

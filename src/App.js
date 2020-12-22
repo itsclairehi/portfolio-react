@@ -4,6 +4,8 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Project from './components/Project';
 import Header from './components/Header'
+import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -24,7 +26,7 @@ function App() {
   ])
 
   //set default to 'about me'
-  const [currentNavSelect, setCurrentNavSelect] = useState(navSelect[0]);
+  const [currentNavSelect, setCurrentNavSelect] = useState(navSelect[0].title);
 
   return (
     <>
@@ -33,7 +35,12 @@ function App() {
         setCurrentNavSelect={setCurrentNavSelect}
         currentNavSelect={currentNavSelect}
       />
+      {/* conditionally render navigation */}
+      {currentNavSelect=="Portfolio" ? (
       <Project currentNavSelect={currentNavSelect} />
+      ):
+      (<About></About>)
+      }
       <Footer />
     </>
   );

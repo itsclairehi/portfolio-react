@@ -95,3 +95,11 @@ WHEN I am presented with the Resume section
 THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+
+  <nav className="sticky-top navbar-light bg-light nav">
+   {/* <a className="navbar-brand" href="#">Claire Puckett</a>
+            <a className="nav-link" href="#">About Me</a>
+            <a className="nav-link" onClick={()=>returnName(navSelect.title)} href="#">Portfolio</a>
+            <a className="nav-link" href="#">Contact</a>
+            <a className="nav-link" href="#">Resume</a> */}
+            </nav>
