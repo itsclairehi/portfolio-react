@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import { React, useState } from "react";
 import './App.css';
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Project from './components/Project';
+import Header from './components/Header'
 
 function App() {
+
+  //put all project data here (or separate file?)
+  const [navSelect] = useState([
+    {
+      title: "About Me",
+    },
+    {
+      title: "Portfolio",
+    },
+    {
+      title: "Resume"
+    },
+    {
+      title: "Contact"
+    }
+  ])
+
+  //set default to 'about me'
+  const [currentNavSelect, setCurrentNavSelect] = useState(navSelect[0]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav
+        navSelect={navSelect}
+        setCurrentNavSelect={setCurrentNavSelect}
+        currentNavSelect={currentNavSelect}
+      />
+      <Project currentNavSelect={currentNavSelect} />
+      <Footer />
+    </>
   );
 }
 
