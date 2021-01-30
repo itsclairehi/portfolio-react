@@ -10,7 +10,7 @@ function Resume(){
             
             <div>
                 <h2 className="skills-heading">Front-end</h2>
-                <ul>
+                <ul className="skills">
                     <li>html</li>
                     <li>CSS</li>
                     <li>Javascript</li>
@@ -24,7 +24,7 @@ function Resume(){
             </div>
             <div>
                 <h2 className="skills-heading">Back-end</h2>
-                <ul>
+                <ul className="skills">
                     <li>MongoDB</li>
                     <li>Mongoose</li>
                     <li>MySQL</li>
@@ -37,7 +37,7 @@ function Resume(){
             </div>
             
             <a href="https://docs.google.com/document/d/1jo2f6mjbXSGfyWMdUO_FC2-xpc96LyzV3bNF8p0XwvU/export?format=pdf" 
-            className="btn btn-primary justify-self-center">View resume</a>
+            className="btn btn-secondary justify-self-center">View resume</a>
             
             
 </div>

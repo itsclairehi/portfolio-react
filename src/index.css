@@ -6,17 +6,8 @@ body {
     font-family: 'Open Sans Condensed', sans-serif, 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 10rem;
-}
-
-
-p{
-  font-size: large;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-ul {
-  font-family:  'Roboto Condensed', sans-serif;
+  max-width: 100%;
+  
 }
 
 code {
@@ -24,13 +15,21 @@ code {
     monospace;
 }
 
-.nav-active{
+a{
+  color: black
+}
+
+/* .nav-active{
   color: palegoldenrod;
   
+} */
+
+.skills {
+  font-family:  'Roboto Condensed', sans-serif;
 }
 
 .pic {
-  width: 75%;
+  width: 60%;
 }
 
 .citizen-portal {
@@ -42,7 +41,9 @@ code {
 }
 
 .about-text {
-  width: 80%;
+  width: 75%;
+  font-size: large;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .img-thumbnail {
@@ -65,9 +66,10 @@ code {
   font-size: 35px;
 }
 
-.nav-link:hover{
+.nav-link:hover, a:hover{
   cursor: pointer;
-  color:orange
+  color:orange;
+  text-decoration: none
 }
 
 .project {
@@ -87,9 +89,12 @@ code {
   margin-bottom: 40px;
   margin-top: 40px;
   
-  
 }
 
+.contact-form{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 .skills-heading{
   border-bottom: 1px solid rgb(221, 218, 218);
 }

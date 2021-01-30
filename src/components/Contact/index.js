@@ -1,84 +1,98 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { FormControl, InputLabel, Select, TextField, Button, Grid, Paper } from "@material-ui/core";
 
-function Contact(){
-//set state to values of all 3 form elements, update on each blur
-const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    message: ''
-})
+function Contact() {
+    //set state to values of all 3 form elements, update on each blur
+    const [formState, setFormState] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
 
-const handleChange = (event) => {
-    const { name, value } = event.target;
+    const handleChange = (event) => {
+        const { name, value } = event.target;
 
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-    console.log(formState);
-    
-  };
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
 
-//initialize error message as empty string
-const [errorMessage, setErrorMessage] = useState('');
+    };
 
-function validateInput(e){
-    //user input
-    console.log(e.target.value);
-    console.log(e.target.name);
-    // setFormValues(...formValues, e.target.name: e.target.value)
-  
-    
-    if(e.target.value==='') {
-        e.target.placeholder="must provide value"
-        setErrorMessage(`${e.target.name} is required.`)
-        
-    } else {
-        setErrorMessage('')
+    //initialize error message as empty string
+    const [errorMessage, setErrorMessage] = useState('');
+
+    function validateInput(e) {
+        //user input
+        console.log(e.target.value);
+        console.log(e.target.name);
+        // setFormValues(...formValues, e.target.name: e.target.value)
+
+
+        if (e.target.value === '') {
+            e.target.placeholder = "must provide value"
+            setErrorMessage(`${e.target.name} is required.`)
+
+        } else {
+            setErrorMessage('')
+        }
     }
-}
 
 
-function formHandler(){
+    function formHandler() {
+        console.log("Successss");
 
-}
+    }
 
-    return(
-        <section className="content">
-            <h1>Contact me</h1>
-            <form id="contact-form content" onSubmit={formHandler} >
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" 
-                    name="name" 
-                    placeholder="name" id="name" 
+    return (
+        <Grid container className="justify-content-center contact-form">
+            
+            <Grid item xs={12} sm={6} component={FormControl} onSubmit={formHandler}  >
+
+             
+                <TextField
+                        className="input"
+                        required id="standard-required"
+                        label="Name"
+                        
+                        margin="normal"
+                        name="name"
+                        type="input"
+                        onBlur={validateInput}
+                        onChange={handleChange}
+                    />
+                    <TextField
+                        className="input"
+                        required id="standard-required"
+                        label="Email Address"
+                        
+                        margin="normal"
+                        name="email"
+                        type="email"
+                        onBlur={validateInput}
+                        onChange={handleChange}
+                    />
+                     <TextField
+                    
+                    label="Message"
+                    multiline
+                    rows={5}
+                    fullWidth={true}
+                    variant="outlined"
+                    placeholder="message"
+                    name="message"
                     onBlur={validateInput}
-                    onChange={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" 
-                    name="email" 
-                    placeholder="email" 
-                    onBlur={validateInput} 
-                    onChange={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" 
-                    rows="5" 
-                    placeholder="message" 
-                    onBlur={validateInput}
-                    onChange={handleChange}  />
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-                <button type="submit">Submit</button>
-            </form>
-            </section>
+                    onChange={handleChange}
+                />
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                    <button className="btn btn-secondary" type="submit">Submit</button>
+                </ Grid>
+            
+        </Grid>
     )
 }
 
