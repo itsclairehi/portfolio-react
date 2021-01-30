@@ -1,15 +1,10 @@
 import { React, useState } from "react";
 import './App.css';
-import Nav from './components/Nav'
-import Footer from './components/Footer'
-import Project from './components/Project';
-import Header from './components/Header'
-import About from './components/About'
-import Contact from './components/Contact'
+import {Nav, Footer, Project, Header, About, Contact, Resume} from './components'
 
 function App() {
 
-  //put all project data here (or separate file?)
+  //nav tabs 
   const [navSelect] = useState([
     {
       title: "About Me",
@@ -36,9 +31,14 @@ function App() {
         currentNavSelect={currentNavSelect}
       />
       {/* conditionally render navigation */}
-      {currentNavSelect=="Portfolio" ? (
-      <Project currentNavSelect={currentNavSelect} />
-      ):
+      {currentNavSelect==="Portfolio" ? (
+      <Project />
+      ):  currentNavSelect==="Contact" ? (
+        <Contact></Contact>
+      ): currentNavSelect==="Resume" ? (
+        <Resume></Resume>
+      )
+      :
       (<About></About>)
       }
       <Footer />
