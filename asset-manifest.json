@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.43620d40.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.8459c25c.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.8459c25c.chunk.js.map",
+    "runtime-main.js": "/portfolio-react/static/js/runtime-main.08acd2b4.js",
+    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.08acd2b4.js.map",
+    "static/js/2.589737ca.chunk.js": "/portfolio-react/static/js/2.589737ca.chunk.js",
+    "static/js/2.589737ca.chunk.js.map": "/portfolio-react/static/js/2.589737ca.chunk.js.map",
+    "static/js/3.423d4ab7.chunk.js": "/portfolio-react/static/js/3.423d4ab7.chunk.js",
+    "static/js/3.423d4ab7.chunk.js.map": "/portfolio-react/static/js/3.423d4ab7.chunk.js.map",
+    "index.html": "/portfolio-react/index.html",
+    "static/css/main.43620d40.chunk.css.map": "/portfolio-react/static/css/main.43620d40.chunk.css.map",
+    "static/js/2.589737ca.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.589737ca.chunk.js.LICENSE.txt",
+    "static/media/citizen-portal.jpg": "/portfolio-react/static/media/citizen-portal.7a542f2a.jpg",
+    "static/media/claire2.5bc69136.JPG": "/portfolio-react/static/media/claire2.5bc69136.JPG",
+    "static/media/fairstreem.png": "/portfolio-react/static/media/fairstreem.31a081af.png",
+    "static/media/kitty.jpg": "/portfolio-react/static/media/kitty.75b6fa4f.jpg",
+    "static/media/mixr-2.jpg": "/portfolio-react/static/media/mixr-2.97560648.jpg",
+    "static/media/mixr.jpg": "/portfolio-react/static/media/mixr.223803c7.jpg",
+    "static/media/weather.png": "/portfolio-react/static/media/weather.f558dc32.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08acd2b4.js",
+    "static/js/2.589737ca.chunk.js",
+    "static/css/main.43620d40.chunk.css",
+    "static/js/main.8459c25c.chunk.js"
+  ]
+}
