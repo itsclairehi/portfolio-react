@@ -34,12 +34,12 @@ function Project() {
             github: "https://github.com/redteam5/mixer"
 
         },
-        {
-            title: "run buddy",
-            description: "whatever",
-            href: "https://www.google.com",
-            imgFileName: "kitty.jpg"
-        },
+        // {
+        //     title: "run buddy",
+        //     description: "whatever",
+        //     href: "https://www.google.com",
+        //     imgFileName: "kitty.jpg"
+        // },
         {
             title: "Citizen Portal",
             description: "Get to know your representatives!",
@@ -47,20 +47,20 @@ function Project() {
             imgFileName: "citizen-portal.jpg",
             github: "https://github.com/TeamGreeenLantern/citizen-portal"
         },
-        {
-            title: "deep thoughts",
-            description: "a social forum page that allows users to comment, reply, and friend each other",
-            href: "https://itsclairehi.github.io/deep-thoughts/",
-            imgFileName: "kitty.jpg",
-            github: "https://github.com/itsclairehi/deep-thoughts"
-        },
-        {
-            title: "Weather Dashboard",
-            description: "a handy weather app for all your curiosities of sun and wind!",
-            href: "https://itsclairehi.github.io/weather-dashboard/",
-            imgFileName: "weather.png",
-            github: "https://github.com/itsclairehi/weather-dashboard"
-        }
+        // {
+        //     title: "deep thoughts",
+        //     description: "a social forum page that allows users to comment, reply, and friend each other",
+        //     href: "https://itsclairehi.github.io/deep-thoughts/",
+        //     imgFileName: "kitty.jpg",
+        //     github: "https://github.com/itsclairehi/deep-thoughts"
+        // },
+        // {
+        //     title: "Weather Dashboard",
+        //     description: "a handy weather app for all your curiosities of sun and wind!",
+        //     href: "https://itsclairehi.github.io/weather-dashboard/",
+        //     imgFileName: "weather.png",
+        //     github: "https://github.com/itsclairehi/weather-dashboard"
+        // }
 
 
     ])
