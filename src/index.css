@@ -93,7 +93,7 @@ a{
   }
 
   .pic{
-    width: 80%;
-    height: 50%;
+    max-width: 80%;
+    max-height: 50%;
   }
 }
