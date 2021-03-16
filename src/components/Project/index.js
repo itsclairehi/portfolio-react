@@ -21,47 +21,28 @@ function Project() {
     const [projects] = useState([
         {
             title: "Fairstreem",
-            description: "a social site for musicians and listeners to connect through music and conversation, with the ability to create profiles and buy songs",
+            description: "a social site for musicians and listeners to connect through music and conversation, with the ability to create profiles and buy songs. Tools: React.js, MongoDB, Mongoose, GraphQL, Material UI, Context API, AWS, JWT",
             href: "https://fairstreem.herokuapp.com/",
             imgFileName: "fairstreem.png",
             github: "https://github.com/Team-Dreem/fairstreem-mern"
         },
         {
             title: "Mixr",
-            description: "project management app for musicians",
+            description: "A project management app for musicians that allows you to upload songs with description and file. You can organize files into project folders, and give your account info to bandmates to contribute. Tools: jQuery, Handlebars.js, MySQL2, Sequelize, bcrypt, Materialize, Express ",
             href: "https://afternoon-reef-59917.herokuapp.com/",
             imgFileName: "mixr-2.jpg",
             github: "https://github.com/redteam5/mixer"
 
         },
-        // {
-        //     title: "run buddy",
-        //     description: "whatever",
-        //     href: "https://www.google.com",
-        //     imgFileName: "kitty.jpg"
-        // },
+
         {
             title: "Citizen Portal",
-            description: "Get to know your representatives!",
+            description: "a user-friendly search app that provides easy access to information about political representatives based on user's provided address. Tools: Google Civics API, jQuery, Bulma ",
             href: "https://teamgreeenlantern.github.io/citizen-portal/index.html",
             imgFileName: "citizen-portal.jpg",
             github: "https://github.com/TeamGreeenLantern/citizen-portal"
         },
-        // {
-        //     title: "deep thoughts",
-        //     description: "a social forum page that allows users to comment, reply, and friend each other",
-        //     href: "https://itsclairehi.github.io/deep-thoughts/",
-        //     imgFileName: "kitty.jpg",
-        //     github: "https://github.com/itsclairehi/deep-thoughts"
-        // },
-        // {
-        //     title: "Weather Dashboard",
-        //     description: "a handy weather app for all your curiosities of sun and wind!",
-        //     href: "https://itsclairehi.github.io/weather-dashboard/",
-        //     imgFileName: "weather.png",
-        //     github: "https://github.com/itsclairehi/weather-dashboard"
-        // }
-
+        
 
     ])
     //when project element is clicked it goes to the deployed site
@@ -116,20 +97,4 @@ function Project() {
 
 export default Project;
 
-   // {/* <div className= "row"> */}
-        //   {/* produce a grid of all projects */}
-
-        //         {/* {projects.map((project, i)=> (
-        //             <div className="project col-sm col-md-6">
-        //               <img
-        //               src={require(`../../assets/project-images/${project.imgFileName}.jpg`).default}
-        //               alt={project.title}
-        //               className = "img-thumbnail mx-1"
-        //               onClick={()=>goToDeploy(project.href)}
-        //               key={project.title}
-        //             />
-        //             </div>
-
-        //         ))}
-
-        //     </div> */}
+ 
