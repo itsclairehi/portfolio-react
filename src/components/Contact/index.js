@@ -45,6 +45,13 @@ function Contact() {
     }
 
     return (
+        <>
+        <div className="emailme">
+            <p >
+            email me at: cpuckett9@gmail.com
+            </p>
+            </div>
+        
         <Grid container className="justify-content-center contact-form">
             
             <Grid item xs={12} sm={6} component={FormControl} onSubmit={formHandler}  >
@@ -93,6 +100,7 @@ function Contact() {
                 </ Grid>
             
         </Grid>
+        </>
     )
 }
 

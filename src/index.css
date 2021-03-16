@@ -15,41 +15,16 @@ code {
     monospace;
 }
 
-a{
-  color: black
-}
-
-.skills {
-  font-family:  'Roboto Condensed', sans-serif;
-}
-
-.pic {
-  width: 60%;
-  max-width: 100%;
-}
-
-.citizen-portal {
-  border: 1px solid black
-}
-
-.work-2 {
-  border: 1px solid black
-}
-
-.about-text {
-  width: 75%;
-  font-size: large;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.img-thumbnail {
-  width: 100%;
-  cursor: pointer;
-}
+/* navbar */
 
 .selected{
   background-color: rgb(255, 226, 173);
   font-weight: 475;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
 }
 
 .nav-link{
@@ -62,15 +37,45 @@ a{
   text-decoration: none
 }
 
+a{
+  color: black
+}
+
+/* about section */
+
+.pic {
+  width: 60%;
+  max-width: 100%;
+}
+
+.about-text {
+  width: 75%;
+  font-size: large;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* project section */
+
+.citizen-portal {
+  border: 1px solid black
+}
+
+.work-2 {
+  border: 1px solid black
+}
+
+.img-thumbnail {
+  width: 100%;
+  cursor: pointer;
+}
+
 .project {
   height: 250px;
   margin: 3%;
 }
 
-.error-text {
-  color:indianred
-}
 
+/* resume/skills */
 .content{
   justify-content: center;
   max-width: 500px;
@@ -79,18 +84,45 @@ a{
   
 }
 
+.skills {
+  font-family:  'Roboto Condensed', sans-serif;
+}
+
+.skills-heading{
+  border-bottom: 1px solid rgb(221, 218, 218);
+}
+
+/* contact */
+
 .contact-form{
   margin-bottom: 40px;
   margin-top: 40px;
 }
-.skills-heading{
-  border-bottom: 1px solid rgb(221, 218, 218);
+
+.emailme{
+  display: flex;
+  justify-content: center;
+}
+
+.error-text {
+  color:indianred
 }
 
 @media only screen and (max-width: 400px) {
   
   .pic{
-    
     height: 100%;
   }
+
+  .nav-link{
+    font-size: 22.5px;
+  }
+
+  .about-text {
+    width: 90%;
+    font-size: medium;
+    margin-top: 15px;
+    
+  }
+
 }
