@@ -19,17 +19,13 @@ a{
   color: black
 }
 
-/* .nav-active{
-  color: palegoldenrod;
-  
-} */
-
 .skills {
   font-family:  'Roboto Condensed', sans-serif;
 }
 
 .pic {
   width: 60%;
+  max-width: 100%;
 }
 
 .citizen-portal {
@@ -48,14 +44,8 @@ a{
 
 .img-thumbnail {
   width: 100%;
-  /* height: 300px; */
-  /* margin-bottom: 50px; */
   cursor: pointer;
 }
-
-/* img {
-  max-width: 100%;
-} */
 
 .selected{
   background-color: rgb(255, 226, 173);
@@ -74,8 +64,6 @@ a{
 
 .project {
   height: 250px;
-  /* background-color: palegreen;
-  border: 3px solid gold; */
   margin: 3%;
 }
 
@@ -97,4 +85,14 @@ a{
 }
 .skills-heading{
   border-bottom: 1px solid rgb(221, 218, 218);
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .pic{
+    width: 80%;
+  }
 }
