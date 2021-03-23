@@ -46,15 +46,11 @@ function Contact() {
 
     return (
         <>
-        <div className="emailme">
-            <p >
-            email me at: cpuckett9@gmail.com
-            </p>
-            </div>
+      
         
-        <Grid container className="justify-content-center contact-form">
+        <Grid container className="contact-form">
             
-            <Grid item xs={12} sm={6} component={FormControl} onSubmit={formHandler}  >
+            {/* <Grid item xs={12} sm={6} component={FormControl} onSubmit={formHandler}  >
 
              
                 <TextField
@@ -97,7 +93,18 @@ function Contact() {
                         </div>
                     )}
                     <button className="btn btn-secondary" type="submit">Submit</button>
-                </ Grid>
+                </ Grid> */}
+
+                <Grid item xs={12} className="contactItem">
+                    <p>email me at: cpuckett9@gmail.com</p>
+                </Grid>
+                <Grid item xs={12} className="contactItem">
+                    <p>github: <a href="https://github.com/itsclairehi">https://github.com/itsclairehi</a> </p>
+                </Grid>
+                <Grid item xs={12} className="contactItem">
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/claire-puckett-26044b27/">https://www.linkedin.com/in/claire-puckett-26044b27/</a> </p>
+                </Grid>
+               
             
         </Grid>
         </>

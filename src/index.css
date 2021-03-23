@@ -15,7 +15,7 @@ code {
     monospace;
 }
 
-/* navbar */
+/* navbar and footer */
 
 .selected{
   background-color: rgb(255, 226, 173);
@@ -23,8 +23,13 @@ code {
 }
 
 .footer{
+  padding-top: 30px;
   display: flex;
   justify-content: center;
+}
+
+.footer-icon{
+ padding: 0 3% 0 3%;
 }
 
 .nav-link{
@@ -97,6 +102,13 @@ a{
 .contact-form{
   margin-bottom: 40px;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: center;
 }
 
 .emailme{
